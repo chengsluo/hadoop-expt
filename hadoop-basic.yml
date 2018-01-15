@@ -8,6 +8,7 @@ services:
       - hadoop
     volumes:
       - namenode:/hadoop/dfs/name
+      - ./exec:/hadoop-data
     env_file:
       - ./hadoop-basic.env
     environment:
